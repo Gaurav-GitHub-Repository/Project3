@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Gooogle Chrome">
+    <classes>
+  	    		  <class name="TestCase.TestCase1"/> 
+<!--       		  <class name="TestCase.TestCase2"/>	-->
+<!--              <class name="TestCase.TestCase3"/>	-->
+<!--              <class name="TestCase.TestCase4"/>	-->
+<!--              <class name="TestCase.TestCase6"/>	-->       
+<!--      		  <class name="TestCase.TestCase7"/>	-->
+<!--              <class name="TestCase.TestCase8"/>	-->
+<!--              <class name="TestCase.TestCase9"/>	-->
+<!--              <class name="TestCase.TestCase10"/>	-->
+<!--              <class name="TestCase.TestCase11"/>	-->
+<!--       		  <class name="TestCase.TestCase12"/>	-->
+<!--       		  <class name="TestCase.TestCase13"/>	-->
+<!--       		  <class name="TestCase.TestCase14"/>	-->
+<!--       		  <class name="TestCase.TestCase15"/>	-->
+<!--       		  <class name="TestCase.TestCase16"/>	-->
+<!--       		  <class name="TestCase.TestCase17"/>	-->
+<!--      		  <class name="TestCase.TestCase18"/>	-->
+<!--       		  <class name="TestCase.TestCase19"/>	-->
+<!--      		  <class name="TestCase.TestCase20"/>	-->
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Microsoft Edge">
+    <classes>
+     			  <class name="TestCase.TestCase21"/>
+<!--     		  <class name="TestCase.TestCase22"/>	-->
+<!--              <class name="TestCase.TestCase23"/>	-->
+<!--              <class name="TestCase.TestCase24"/>	-->
+<!--              <class name="TestCase.TestCase25"/>	-->       
+<!--      		  <class name="TestCase.TestCase26"/>	-->
+<!--              <class name="TestCase.TestCase27"/>	-->
+<!--              <class name="TestCase.TestCase28"/>	-->
+<!--              <class name="TestCase.TestCase29"/>	-->
+<!--              <class name="TestCase.TestCase30"/>	-->
+<!--       		  <class name="TestCase.TestCase31"/>	-->
+<!--       		  <class name="TestCase.TestCase32"/>	-->
+<!--       		  <class name="TestCase.TestCase33"/>	-->
+<!--       		  <class name="TestCase.TestCase34"/>	-->
+<!--       		  <class name="TestCase.TestCase35"/>	-->
+<!--       		  <class name="TestCase.TestCase36"/>	-->
+    </classes>
+   </test> 
+</suite> <!-- Suite -->

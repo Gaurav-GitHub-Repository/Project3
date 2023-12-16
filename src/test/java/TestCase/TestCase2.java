@@ -18,7 +18,7 @@ public class TestCase2 {
 		@Test(priority=0)
 		public void initialize()
 		{
-		System.setProperty("WebDriver.Chrome.Driver", "C:\\Selenium Temp\\ChromeDriver\\chromedriver.exe");
+		System.setProperty("WebDriver.Chrome.Driver", "C:\Selenium Temp\ChromeDriver\V120\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

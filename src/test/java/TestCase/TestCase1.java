@@ -16,7 +16,7 @@ public class TestCase1 {
 	@Test(priority=0)
 	public void SignUp() throws InterruptedException
 	{
-	System.setProperty("WebDriver.Chrome.Driver", "C:\\Selenium Temp\\ChromeDriver\\chromedriver.exe");
+	System.setProperty("WebDriver.Chrome.Driver", "C:\Selenium Temp\ChromeDriver\V120\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

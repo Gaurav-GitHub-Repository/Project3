@@ -23,27 +23,27 @@ public class Checkout_Dashboard {
 	}
 	 
 	//Locator to update location in checkout
-	By Add_Address = By.xpath("//a[@id='add-new-address-popover-link']");
+	By Add_Address = By.xpath("//form[@method='post']/div/div/div/div/span[1]/a");
 	//Locator for name
-	By Name = By.xpath("//input[@id='address-ui-widgets-enterAddressFullName']");
+	By Name = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[4]/input");
 	//Locator for number
-	By number = By.xpath("//input[@id='address-ui-widgets-enterAddressPhoneNumber']");
+	By number = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[6]/input");
 	//Locator for pincode
-	By Pincode = By.xpath("//input[@id='address-ui-widgets-enterAddressPostalCode']");
+	By Pincode = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[8]/input");
 	//Locator for area
-	By Area = By.xpath("//input[@id='address-ui-widgets-enterAddressLine1']");
+	By Area = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[10]/input");
 	//Locator for area2
-	By Area2 = By.xpath("//input[@id='address-ui-widgets-enterAddressLine2']");
+	By Area2 = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[12]/input");
 	//Locator for city
-	By City = By.xpath("//input[@id='address-ui-widgets-enterAddressCity']");
+	By City = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[15]/div/div[2]/input");
 	//Locator to select address button
-	By Address_Button = By.xpath("//input[@aria-labelledby='address-ui-widgets-form-submit-button-announce']");
+	By Address_Button = By.xpath("//*[@id="address-ui-widgets-form-submit-button"]/span/input");
 	//Locator to save address
 	By Checkout_SaveAddress = By.xpath("//input[@name='address-ui-widgets-saveOriginalOrSuggestedAddress']");
 	//Locator for payment method
-	By Payment = By.xpath("//div[@aria-label='Payment method ']/div/div/span/h3");
+	By Payment = By.xpath("//div[@aria-label='Payment method ' and @role='form']/div/div/span/h3/span[2]");
 	//Locator to select debit card
-	By Radio = By.xpath("//@id='pp-1nccWU-96'");
+	By Radio = By.xpath("//form[@id='address-list' and @method='post']/div/div/div/fieldset/div[2]/span/div/label/input");
 	//Locator to select card
 	By Card = By.xpath("//a[text()='Enter card details']");
 	//Locator to select checkout address

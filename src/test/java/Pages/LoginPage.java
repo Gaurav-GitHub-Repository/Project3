@@ -16,17 +16,17 @@ public class LoginPage {
 	}
 	
 	//Locator for Amazon Account Button
-	By Amazon_Account = By.xpath("//a[@id='createAccountSubmit']");
+	By Amazon_Account1 = By.linkText("Create your Amazon account");
 	//Locator for Register Name
-	By Register_Name = By.xpath("//input[@name='customerName']");
+	By Register_Name = By.xpath("//input[@name='customerName']/self::input");
 	//Locator for Register Number
-	By Register_Number = By.xpath("//input[@id='ap_phone_number']");
+	By Register_Number = By.xpath("//input[@name='email' and @id='ap_phone_number']");
 	//Locator for Register Email
-	By Register_Email = By.xpath("//input[@id='ap_email']");
+	By Register_Email = By.xpath("//*[@id='ap_email']");
 	//Locator for Register Password
-	By Register_Password = By.xpath("//input[@id='ap_password']");
+	By Register_Password = By.xpath("//input[@name='password']/self::input");
 	//Locator to verify number
-	By Number = By.xpath("//input[@id='continue']");
+	By Number = By.ByCssSelector("input#continue");
 	//Locator for OTP
 	By Register_OTP = By.xpath("//form[@id='auth-pv-form']/input[5]");
 	//Locator for Account Button

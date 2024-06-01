@@ -19,8 +19,11 @@ public class TestCase1 {
 	System.setProperty("WebDriver.Chrome.Driver", "C:\Selenium Temp\ChromeDriver\V120\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	driver.get("https://www.amazon.in/");
+	}
+	@Test(priority=1)
+	{
 	//Method to call LoginPage
 	LoginPage loginpage = new LoginPage(driver);
 	loginpage.move();

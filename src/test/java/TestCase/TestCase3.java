@@ -44,8 +44,12 @@ public class TestCase3 {
 		Dashboard dashboard = new Dashboard(driver);
 		dashboard.verifyPage();
 		dashboard.moveToSignout();
+		}
+		@Test(priority=3)
+		{
 		//Method to call LogoutPage
 		LogoutPage logoutpage = new LogoutPage(driver);
 		logoutpage.button();
+		}
 	}
 }

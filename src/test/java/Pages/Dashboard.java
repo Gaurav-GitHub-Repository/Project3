@@ -72,9 +72,8 @@ public class Dashboard {
 	//Method to click on flight
 	public void Flight_Ticket()
 	{
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(Select_Flight));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(Select_Flight));
 		driver.findElement(Select_Flight).click();
 	}
 	//Method to Mousehover
@@ -120,7 +119,7 @@ public class Dashboard {
 	//Method to click on Location
 	public void location()
 	{
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Thread.Sleep("5000");
 		driver.findElement(Location).click();
 	}
 	//Method to add address
@@ -138,7 +137,7 @@ public class Dashboard {
 	//Method to Add Address
 	public void addAddress2()
 	{
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Thread.Sleep("5000");
 		driver.findElement(Add_Address).click();
 	}
 	//Method to select country

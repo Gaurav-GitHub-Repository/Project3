@@ -23,7 +23,7 @@ public class Dashboard {
 	}
 	
 	//Locator for Dashboard Button
-	By Button = By.xpath("//div[@id='nav-main']/div/a/i");
+	By Button = By.cssSelector("i.hm-icon");
 	//Locator to scroll
 	By Element = By.xpath("//div[text()='help & settings']");
 	//Locator for SignIn
@@ -31,27 +31,27 @@ public class Dashboard {
 	//Locator to verify logo 
 	By Logo = By.xpath("//a[@href='/ref=nav_logo']");
 	//Locator for location
-	By Location = By.xpath("//div[@id='nav-global-location-slot']");
+	By Location = By.cssSelector("div#nav-global-location-slot");
 	//Locator to add address
-	By Address = By.xpath("//div[@class='a-popover-wrapper']/div/div/div/div/div[@class='a-spacing-top-base']");
+	By Address = By.cssSelector("div.a-spacing-top-base");
 	//Locator to add address
-	By Add_Address = By.xpath("//div[@class='a-box first-desktop-address-tile']/div/h2");
+	By Add_Address = By.xpath("//*[text()='Add address']");
 	//Locator for Full Name
-	By Name = By.xpath("//*[@id='address-ui-widgets-enterAddressFullName']");
+	By Name = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[4]/input");
 	//Locator for Street Number
-	By Street = By.xpath("//*[@id='address-ui-widgets-enterAddressLine1']");
+	By Street = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[10]/input");
 	//Locator for Street Address
-	By Street_Address = By.xpath("//*[@id='address-ui-widgets-enterAddressLine2']");
+	By Street_Address = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[12]/input");
 	//Locator for City
-	By City = By.xpath("//*[@id='address-ui-widgets-enterAddressCity']");
+	By City = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[15]/div[1]/div[2]");
 	//Locator for state
-	By State = By.xpath("//select[@name='address-ui-widgets-enterAddressStateOrRegion']");
+	By State = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[15]/div[2]/div[2]/span");
 	//Locator for postal code
-	By Postal_Code = By.xpath("//*[@id='address-ui-widgets-enterAddressPostalCode']");
+	By Postal_Code = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[8]/input");
 	//Locator for mobile number
-	By Mobile_Number = By.xpath("//*[@id='address-ui-widgets-enterAddressPhoneNumber']");
+	By Mobile_Number = By.xpath("//div[@class='a-input-text-group a-spacing-medium a-spacing-top-medium']/parent::div/div/div[6]/input");
 	//Locator for add address button
-	By Address_Button = By.xpath("//span[@data-action='form-submit-button-click']/span/span/input");
+	By Address_Button = By.xpath("//*[@id="address-ui-widgets-form-submit-button"]/span/input");
 	//Locator to verify address
 	By Address_Saved = By.xpath("//div[@class='a-box a-alert a-alert-success a-spacing-small']/div/h4");
 	//Locator to retrieve address details

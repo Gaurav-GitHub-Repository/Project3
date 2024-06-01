@@ -71,7 +71,16 @@ public class Checkout_Dashboard {
 	public void selectCountry()
 	{
 		Select var = new Select(driver.findElement(By.xpath("//select[@name='address-ui-widgets-countryCode']")));
-		var.selectByVisibleText("India");
+		var.selectByVisibleText("India");	
+		if(var.equals("India"))
+		{
+			System.out.println("Country is selected:" + " " + "India");
+		}
+		else
+		{
+			System.out.println("Country is not selected");
+		}
+		
 	}
 	//Method to call name
 	public void name(String value)
@@ -114,6 +123,15 @@ public class Checkout_Dashboard {
 	{
 		Select var = new Select(driver.findElement(By.xpath("//select[@name='address-ui-widgets-enterAddressStateOrRegion']")));
 		var.selectByVisibleText("TELANGANA");
+		List<WebElement> State = driver.findElements(By.xpath("//select[@name='address-ui-widgets-enterAddressStateOrRegion']"));
+		for(WebElement TotalNumberOfState:State)
+		{
+			if(TotalNumberOfState.equals("TELANGANA"))
+			{
+				System.out.println("Country dropdown is selected:"+ " " +"TELANGANA");
+				break;
+			}
+		}
 	}
 	//Method to click on address button
 	public void addressBtn() throws InterruptedException
@@ -167,8 +185,8 @@ public class Checkout_Dashboard {
 	public void selectRadio() throws InterruptedException
 	{
 		driver.findElement(Radio).click();
-//		driver.findElement(Radio).isDisplayed();
-//		driver.findElement(Radio).isSelected();
+		boolean RadioButton = driver.findElement(Radio).isDisplayed();
+		System.out.println(RadioButton);
 	}
 	//Method to select debit card
 	public void selectCardDetails()
@@ -180,6 +198,15 @@ public class Checkout_Dashboard {
 	{
 		Select var = new Select(driver.findElement(By.xpath("//select[@name='ppw-bankSelection_dropdown']")));
 		var.selectByVisibleText("ICICI Bank");	
+		List<WebElement> SelectNetBanking = driver.findElements(By.xpath("//*[@id='pp-9f70cZ-107']"));
+		for(WebElement Product:SelectNetBanking)
+		{
+			if(Product.equals("ICICI Bank"))
+			{
+				System.out.println("Net banking is selected:" + " " + "ICICI Bank");
+				break;
+			}
+		}
 	}
 	//Method to click on cash on delivery payment
 	public void selectCashDelivery()
